@@ -11,7 +11,7 @@
   "author": {
     "name": "--author-name",
     "email": "--author-email",
-    "url": "--author-name"
+    "url": "--author-url"
   },
   "files": [
     "dist",
