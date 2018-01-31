@@ -1,0 +1,50 @@
+{
+    "name": "skeleton-npm-angular-pkg",
+    "version": "0.0.0-development",
+    "description": "Skeleton to build angular npm package",
+    "homepage": "https://github.com/nogsantos/skeleton-npm-angular-pkg#readme",
+    "main": "dist/index.js",
+    "scripts": {
+        "commit": "git-cz",
+        "semantic-release": "semantic-release"
+    },
+    "author": {
+        "name": "Fabricio Nogueira",
+        "email": "nogsantos@gmail.com",
+        "url": "http://fabricionogueira.me"
+    },
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "keywords": [
+        "Angular",
+        "NPM"
+    ],
+    "devDependencies": {
+        "codecov.io": "0.1.6",
+        "commitizen": "2.9.6",
+        "cz-conventional-changelog": "2.1.0",
+        "ghooks": "2.0.2",
+        "npm-run-all": "4.1.2",
+        "rimraf": "2.6.2",
+        "semantic-release": "^12.4.1"
+    },
+    "dependencies": {
+        "@angular/core": "5.2.2",
+        "rxjs": "5.5.6",
+        "zone.js": "0.8.20"
+    },
+    "bugs": {
+        "url": "https://github.com/nogsantos/skeleton-npm-angular-pkg/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nogsantos/skeleton-npm-angular-pkg.git"
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-conventional-changelog"
+        }
+    }
+}
