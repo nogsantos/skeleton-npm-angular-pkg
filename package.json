@@ -1,17 +1,17 @@
 {
-  "name": "skeleton-npm-angular-pkg",
+  "name": "--pkg-name",
   "version": "0.0.0-development",
   "description": "Skeleton to build angular npm package",
-  "homepage": "https://github.com/nogsantos/skeleton-npm-angular-pkg#readme",
+  "homepage": "https://github.com/--username/--pkg-name#readme",
   "main": "dist/index.js",
   "scripts": {
     "commit": "git-cz",
     "semantic-release": "semantic-release"
   },
   "author": {
-    "name": "Fabricio Nogueira",
-    "email": "nogsantos@gmail.com",
-    "url": "http://fabricionogueira.me"
+    "name": "--author-name",
+    "email": "--author-email",
+    "url": "--author-name"
   },
   "files": [
     "dist",
@@ -32,6 +32,8 @@
     "cz-conventional-changelog": "2.1.0",
     "ghooks": "2.0.2",
     "npm-run-all": "4.1.2",
+    "prompt": "1.0.0",
+    "replace": "0.3.0",
     "rimraf": "2.6.2",
     "semantic-release": "^12.4.1",
     "tslint": "5.9.1",
@@ -43,11 +45,11 @@
     "zone.js": "0.8.20"
   },
   "bugs": {
-    "url": "https://github.com/nogsantos/skeleton-npm-angular-pkg/issues"
+    "url": "https://github.com/--username/--pkg-name/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nogsantos/skeleton-npm-angular-pkg.git"
+    "url": "https://github.com/--username/--pkg-name.git"
   },
   "config": {
     "commitizen": {

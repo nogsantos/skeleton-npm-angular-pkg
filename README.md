@@ -6,13 +6,15 @@
 ### Clone
 
 ```shell
-$ git clone https://github.com/nogsantos/skeleton-npm-angular-pkg [to dir]
+git clone https://github.com/nogsantos/skeleton-npm-angular-pkg [to dir]
 ```
 
-### Dependencies
+### Setup
+
+First, you have to configure the project
 
 ```shell
-$ npm install
+node setup
 ```
 
 ## License
