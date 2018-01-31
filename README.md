@@ -3,6 +3,18 @@
 
 ## Installation
 
+### Clone
+
+```shell
+$ git clone https://github.com/nogsantos/skeleton-npm-angular-pkg [to dir]
+```
+
+### Dependencies
+
+```shell
+$ npm install
+```
+
 ## License
 
 MIT © [Fabricio Nogueira](http://fabricionogueira.me)
