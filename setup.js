@@ -94,10 +94,8 @@ var prompting = () => {
                 recursive: true,
                 silent: true,
             });
-            exec('node_modules/.bin/rimraf .git/');
-            exec('node_modules/.bin/rimraf setup.js');
-            exec('node_modules/.bin/rimraf README.md');
-            exec('git init');
+            exec('node_modules/.bin/rimraf .git/ setup.js README.md');
+            spawn('git', ['init']);
             fs.writeFile('README.md', `# ${result.pkg_name}`, err => {
                 if(err) {
                     return console.log(err);
