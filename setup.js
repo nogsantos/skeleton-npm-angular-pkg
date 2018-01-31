@@ -2,6 +2,7 @@ var {
     exec,
     spawn
 } = require('child_process');
+var fs = require('fs');
 
 console.log('Setting up dev dependencies, please wait...\n');
 var install = spawn('npm', ['install'], {
@@ -12,7 +13,7 @@ install.stdout.on('data', data => {
     console.log(data.toString());
 });
 install.on('close', (code, signal) => {
-    exec('clear');
+    process.stdout.write('\x1Bc');
     console.log('Setting up package configuration...\n');
     prompting();
 });
@@ -94,6 +95,15 @@ var prompting = () => {
                 silent: true,
             });
             exec('node_modules/.bin/rimraf .git/');
+            exec('node_modules/.bin/rimraf setup.js');
+            exec('node_modules/.bin/rimraf README.md');
+            exec('git init');
+            fs.writeFile('README.md', `# ${result.pkg_name}`, err => {
+                if(err) {
+                    return console.log(err);
+                }
+                console.log('README.md Done!\n');
+            });
             console.log('All done! Let\'s code!');
         }
     });
